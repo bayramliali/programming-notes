@@ -1,6 +1,8 @@
 # My notes from Bootstrap 4 documentation
 
-## Starter template for quick up & going 
+## Getting started
+
+### Starter template for quick up & going 
 
 ``` html
 <!doctype html>
@@ -27,5 +29,6 @@
 </html>
 ```
 
-## Grid
+### Box-sizing
 
+Global `box-sizing` value has been changed from `content-box` to `border-box` which means border or padding width is contained within specified width of element.
