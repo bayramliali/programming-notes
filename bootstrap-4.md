@@ -31,4 +31,7 @@
 
 ### Box-sizing
 
-Global `box-sizing` value has been changed from `content-box` to `border-box` which means border or padding width is contained within specified width of element.
+<<<<<<<
+=======
+<!-- add notes-->
+>>>>>>> 2d4a244145f35723c2059de6c61c4bc4633d9f3a
