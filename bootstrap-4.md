@@ -30,3 +30,29 @@
 ```
 
 ### Box-sizing
+
+Global `box-sizing` value has been changed from `content-box` to `border-box` which means width of element that you set will contain border and padding, too.
+
+## Layout
+
+### Containers
+
+Containers are required when using default grid system. There are two kinds of containers:
+
+* `.container` : fixed-width container, meaning its `max-width` changes at each breakpoint.
+
+* `.container-fluid` : fluid-width, meaning it's spanning the entire width of the viewport all the time.
+
+### Grid system
+
+* Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content.
+
+* Rows are wrappers for columns. Each has horizontal `padding` (called a _gutter_) for controlling the space between them. This padding is counteracted on the rows with negative margins. You can remove the `margin` from rows and `padding` from columns with `.no-gutters` on the `.row`.
+
+* In a grid layout, content must be placed within columns and only columns may be immediate children of rows.
+
+* Grid columns without a specified `width` will automatically layout as equal width columns.
+
+* Column `width`s are sized relative to their parent element.
+
+* Grid breakpoints apply to that one breakpoint and all those above it. For example, `.col-lg-4` applies to large  and extra-large devices, but not the ones smaller than large breakpoint.
