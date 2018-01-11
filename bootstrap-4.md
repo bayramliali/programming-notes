@@ -182,3 +182,9 @@ Containers are required when using default grid system. There are two kinds of c
         </div>
       </div>
     </div>
+* Add `.w-100` wherever you want to wrap ypur columns to a new line in the same row.
+* Use `.order-` for controlling **visual order** of your content:
+  * These classes are responsive, you can set the order by breakpoint such as `.order-1 .order-md-2`.
+  * Includes support for 1 through 12.
+  * `.order-first` changes the order of one element by applying _order: -1_ which makes that column first in order.
+  * Unordered column comes before all `.order-`s but after `.order-first` if there is.
