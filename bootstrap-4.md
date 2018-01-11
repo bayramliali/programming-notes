@@ -82,7 +82,7 @@ Containers are required when using default grid system. There are two kinds of c
 * Use flexbox alignment utilities to vertically and horizontally align columns:
 
   * Vertical alignment:
-    ![Vertical alignment]
+    ![Vertical alignment](https://github.com/erolaliyev/programming-notes/blob/master/Images/Bootstrap-4/vertical-alignment.png)
     ```html
     <div class="container">
       <div class="row align-items-start">
