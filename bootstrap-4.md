@@ -81,8 +81,8 @@ Containers are required when using default grid system. There are two kinds of c
   ```
 * Use flexbox alignment utilities to vertically and horizontally align columns:
 
-  * Vertical alignment:
-    ![Vertical alignment](https://github.com/erolaliyev/programming-notes/blob/master/Images/Bootstrap-4/vertical-alignment.png)
+  * Vertical alignment 1:
+    ![Vertical alignment 1](https://github.com/erolaliyev/programming-notes/blob/master/Images/Bootstrap-4/vertical-alignment%201.png)
     ```html
     <div class="container">
       <div class="row align-items-start">
@@ -120,3 +120,66 @@ Containers are required when using default grid system. There are two kinds of c
       </div>
     </div>
     ```
+  * Vertical alignment 2:
+    ![Vertical alignment 2](https://github.com/erolaliyev/programming-notes/blob/master/Images/Bootstrap-4/vertical-alignment%202.png)
+    ```html
+    <div class="container">
+      <div class="row">
+        <div class="col align-self-start">
+          One of three columns
+        </div>
+        <div class="col align-self-center">
+          One of three columns
+        </div>
+        <div class="col align-self-end">
+          One of three columns
+        </div>
+      </div>
+    </div>
+    ```
+  * Horizontal alignment:
+    ![Horizontal alignment]
+    ()
+    ```html
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-4">
+          One of two columns
+        </div>
+        <div class="col-4">
+          One of two columns
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-4">
+          One of two columns
+        </div>
+        <div class="col-4">
+          One of two columns
+        </div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-4">
+          One of two columns
+        </div>
+        <div class="col-4">
+          One of two columns
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-4">
+          One of two columns
+        </div>
+        <div class="col-4">
+          One of two columns
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-4">
+          One of two columns
+        </div>
+        <div class="col-4">
+          One of two columns
+        </div>
+      </div>
+    </div>
