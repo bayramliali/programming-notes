@@ -64,7 +64,7 @@ Containers are required when using default grid system. There are two kinds of c
   | Screen size         | <576px          | >=576px   | >=768px    | >=992px   | >=1200px      |
   | Max container width | None(auto)      | 540px     | 720px      | 960px     | 1140px        |
   | Class prefix        | `.col-`         | `col-sm`  | `.col-md`  | `.col-lg` | `.col-xl`     |
-  | # of columns        | 12                                                                   |
+  | # of columns        |                                 12                                   |
   | Gutter width        | 30px (15px on each side of column)                                   |
 
 * `.col-{breakpoint}-auto` classes size columns based on the natural width of their content.
