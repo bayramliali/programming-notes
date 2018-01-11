@@ -51,8 +51,72 @@ Containers are required when using default grid system. There are two kinds of c
 
 * In a grid layout, content must be placed within columns and only columns may be immediate children of rows.
 
-* Grid columns without a specified `width` will automatically layout as equal width columns.
+* Grid columns without a specified `width` such as `.col-sm` will automatically layout as equal width columns.
 
 * Column `width`s are sized relative to their parent element.
 
 * Grid breakpoints apply to that one breakpoint and all those above it. For example, `.col-lg-4` applies to large  and extra-large devices, but not the ones smaller than large breakpoint.
+
+* Handy table for breakpoints and grid system:
+
+  | Name                | Extra small     | Small     | Medium     | Large     | Extra-large   |
+  | ------------------- | --------------- | --------- | ---------- | --------- | ------------- |
+  | Screen size         | <576px          | >=576px   | >=768px    | >=992px   | >=1200px      |
+  | Max container width | None(auto)      | 540px     | 720px      | 960px     | 1140px        |
+  | Class prefix        | `.col-`         | `col-sm`  | `.col-md`  | `.col-lg` | `.col-xl`     |
+  | # of columns        | 12                                                                   |
+  | Gutter width        | 30px (15px on each side of column)                                   |
+
+* `.col-{breakpoint}-auto` classes size columns based on the natural width of their content.
+
+* Create equal-width columns that span multiple rows by inserting a `.w-100` class where you want the columns to break to a new line.
+  ``` html
+  <div class="row">
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="w-100"></div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+  </div>
+  ```
+* Use flexbox alignment utilities to vertically and horizontally align columns:
+
+  * Vertical alignment:
+    ![Vertical alignment]
+    ```html
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+      </div>
+      <div class="row align-items-end">
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+      </div>
+    </div>
+    ```
