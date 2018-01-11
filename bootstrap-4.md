@@ -138,8 +138,7 @@ Containers are required when using default grid system. There are two kinds of c
     </div>
     ```
   * Horizontal alignment:
-    ![Horizontal alignment]
-    <https://github.com/erolaliyev/programming-notes/blob/master/Images/Bootstrap-4/horizontal-alignment.png>
+    ![Horizontal alignment](https://github.com/erolaliyev/programming-notes/blob/master/Images/Bootstrap-4/horizontal-alignment.png)
     ```html
     <div class="container">
       <div class="row justify-content-start">
