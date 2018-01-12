@@ -188,3 +188,6 @@ Containers are required when using default grid system. There are two kinds of c
   * Includes support for 1 through 12.
   * `.order-first` changes the order of one element by applying _order: -1_ which makes that column first in order.
   * Unordered column comes before all `.order-`s but after `.order-first` if there is.
+* `offset-{breakpoint}-*` moves columns to the right. They increase the left margin of a column by `*` columns.
+* `offset-{breakpoint}-0` resets the previously set offsets.
+* To nest content add a new `.row` and set of `.col-{breakpoint}-*` columns within an existing `.col-{breakpoint}-*` column.
