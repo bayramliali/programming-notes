@@ -45,7 +45,7 @@ Containers are required when using default grid system. There are two kinds of c
 * Use flexbox alignment utilities to vertically and horizontally align columns:
 
   * Vertical alignment 1:
-    ![Vertical alignment 1](https://github.com/erolaliyev/programming-notes/blob/master/bootstrap-4/Images/vertical-alignment-1.png)
+    ![Vertical alignment 1](https://github.com/erolaliyev/programming-notes/blob/master/docs/bootstrap-4/Images/vertical-alignment-1.png)
     ```html
     <div class="container">
       <div class="row align-items-start">
@@ -84,7 +84,7 @@ Containers are required when using default grid system. There are two kinds of c
     </div>
     ```
   * Vertical alignment 2:
-    ![Vertical alignment 2](https://github.com/erolaliyev/programming-notes/blob/master/bootstrap-4/Images/vertical-alignment-2.png)
+    ![Vertical alignment 2](https://github.com/erolaliyev/programming-notes/blob/master/docs/bootstrap-4/Images/vertical-alignment-2.png)
     ```html
     <div class="container">
       <div class="row">
@@ -101,7 +101,7 @@ Containers are required when using default grid system. There are two kinds of c
     </div>
     ```
   * Horizontal alignment:
-    ![Horizontal alignment](https://github.com/erolaliyev/programming-notes/blob/master/bootstrap-4/Images/horizontal-alignment.png)
+    ![Horizontal alignment](https://github.com/erolaliyev/programming-notes/blob/master/docs/bootstrap-4/Images/horizontal-alignment.png)
     ```html
     <div class="container">
       <div class="row justify-content-start">
