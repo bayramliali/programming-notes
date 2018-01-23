@@ -1,0 +1,1 @@
+My notes from Javascript: Understanding the weird parts
