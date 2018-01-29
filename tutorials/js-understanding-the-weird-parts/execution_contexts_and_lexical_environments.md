@@ -35,4 +35,24 @@ function b() {
       * In creation  phase, JS engine sets up memory space for variables and functions.
       * All variables in JS, are initially set to `undefined`.
   2. Execution Phase :
-      * Code executes. Function executes normally. But variables shows `undefined` (its initial vallue). Because execution variable (`console.log(a);`) comes before its assignment to value.
+      * Code executes. Function executes normally. But variables shows `undefined` (its initial vallue). Because execution of variable (`console.log(a);`) comes before its assignment to value.
+
+## Undefined
+
+```javascript
+console.log(a); // Uncaught ReferenceError: a is not defined
+```
+
+**Means** - Variable has not been declared.
+
+```javascript
+var a;
+console.log(a); // undefined
+```
+
+**Means** - Variable has been declared but has not been assigned any value yet.
+
+* **Single threaded** - One command at a time.
+* **Synchronous** - One at a time :
+  * And in order...
+  * Synchronous code means code executes one line at a time in the order it appears.
