@@ -56,3 +56,40 @@ console.log(a); // undefined
 * **Synchronous** - One at a time :
   * And in order...
   * Synchronous code means code executes one line at a time in the order it appears.
+* **Invocation** - Running a function or calling a function :
+  * In JS, by using a parenthesis.
+* **Variable environment** - Where the variables live :
+  * And how they relate to each other in memory.
+  * Each execution context has its own variable environment (which called **scope**).
+
+## Scope Chain
+
+```javascript
+function b() {
+  console.log (myVar);
+}
+function a() {
+  var myVar = 2;
+  b();
+}
+var myVar = 1;
+a(); // 1
+```
+
+**Means** - `console.log(myVar);` prints out 1 because outer environment of `function b()` is global execution level, even though it is called inside `function a()`, it is defined in global level. So, when JS engine cannot find value for variable myVar inside `function b()` it looks outer environment which happens to be global level.
+
+```javascript
+function a() {
+  function b() {
+    console.log(myVar);
+  }
+  var myVar = 2;
+  b();
+}
+var myVar = 1;
+b(); // Uncaught ReferenceError: b is not defined
+a(); // 2
+```
+
+**Means** - `function b()` is not accessible in global execution level because it is defined inside `function a()`.
+**Means** - `console.log(myVar);` prints out 2 because outer environment of `function b()` is inside of `function a()` and in there variable myVar has been assigned to value 2. If variable had not been assigned any value inside `function a()` too, then JS engine would go down on scope chain and look for it in outer environment of `function a()` which is global execution level.
